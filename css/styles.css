@@ -167,6 +167,7 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -261,7 +262,7 @@ img {
 }
 
 .feature-list .item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .feature-list .item:not(:last-child) {
@@ -324,7 +325,7 @@ img {
 .portfolio-nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-nav .item:not(:last-child) {
@@ -387,12 +388,24 @@ img {
   background-color: #2f303a;
 }
 
-.logo-footer {
+.logo-ft {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo-text {
   color: #fff;
 }
 
 .adr {
-  margin-top: 20px;
   margin-bottom: 9px;
 
   font-style: normal;
