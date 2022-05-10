@@ -60,6 +60,8 @@ img {
 /* Логотип */
 
 .logo {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -75,17 +77,19 @@ img {
 
 /*  Навигация сайта */
 
-.main-nav {
-  display: flex;
-  align-items: center;
+.header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -125,6 +129,10 @@ img {
 }
 
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -142,13 +150,18 @@ img {
 /* Герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
 
   background-color: #2f303a;
 }
 
 .hero-title {
-  margin-top: 0;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -274,8 +287,6 @@ img {
 .team-list .item {
   flex-basis: calc(100% / 4);
   text-align: center;
-
-  border: 1px solid #eeeeee;
 }
 
 .team-list .item:not(:last-child) {
@@ -313,7 +324,7 @@ img {
 .portfolio-nav {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .portfolio-nav .item:not(:last-child) {
@@ -353,7 +364,7 @@ img {
 }
 
 .works .card-content {
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px;
 
   border-right-width: 1px;
   border-right-style: solid;
@@ -391,7 +402,7 @@ img {
   color: #fff;
 }
 
-.mail {
+.mail:not(:last-child) {
   margin-bottom: 9px;
 }
 
